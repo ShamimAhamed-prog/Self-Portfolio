@@ -18,6 +18,9 @@ body
     background: url(sitebg.jpg) no-repeat center fixed;
     background-size:cover;
 }
+section{
+    padding:6rem 0 ;
+}
 a
 {
     text-decoration: none;
@@ -30,19 +33,19 @@ p
 }
 img
 {
-    width: 100%;
+    width: 60%;
 }
 
 .container{
     width: 90%;
     max-width: 120rem;
     height: 100%;
-    margin: 0 auto;
+    margin:auto;
     position: relative;
 }
 .section-heading{
     text-align: center;
-    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -85,6 +88,11 @@ img
     position: relative;
     margin-bottom: 1rem;
 }
+.has-margin-right{
+    margin-right: 5ren;
+
+}
+
 header
 {
     width: 100%;
@@ -157,7 +165,7 @@ li
     border-radius: 8rem;
 }
 .bar.half{
-    width: 50%;
+    width: 100%;
 }
 .bar.start{
     transform-origin: right;
@@ -181,7 +189,7 @@ li
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    z-index: l;
+    z-index: 1;
 
 }
 .landing-text h1{
@@ -266,17 +274,214 @@ li
     padding: 2rem -2px 2rem 0;
 }
 
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:  2rem ;
+}
 .icon-container{
     width: 10rem;
     height: 10rem;
     border:3px solid #ffe838 ;
     background-color: #fd57bf;
-    
-
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+.icon-container i{
+    color: #ffe838;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.portfolio-item:last-child{
+    margin-bottom: 0;
+}
+.profile-img{
+    width: 70rem;
+    flex: 1;
+}
+.portfolio-description{
+   
+}
+.portfolio-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+   margin: 1rem 0;
+   opacity: 0.3;
+}
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  
+}
+.portfolio-description.cta{
+    display:inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+}
+.portfolio-description.cta:hover{
+    color: #2f67cd;
+}
+.contact{
+    background-color: #221e3f;
+}
+form{
+    width: 70%;
+    margin: 0 auto;   
+}
+form label{
+    font-size: 1.5rem;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #fd57bf;
+}
+input{
+    width: initial;
+    background-color:rgb(22, 198, 221);
+     color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+     color: #d81fbf;
+     background-color: #ffe838;
 }
 
-.skill h1{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin:  2rem ;
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+.copyright p{
+    font-size: 1.4rem;
+}
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+   100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body
+    {
+        background: url(sitebg2.jpg) no-repeat center fixed;
+        background-size:cover;
+    }
+    .landing-text h1{
+        font-size: 15rem;
+    }
+    .landing-text h6{
+        font-size: 1.7rem;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .nav-link{
+        font-size: 4.5rem;
+    }
+    .about-heading h1{
+        font-size: 8rem;
+    }
+    .section-heading{
+        font-size: 3rem;
+    }
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+    .about .about-details li{
+        margin: 0 2rem;
+    }
+    .icon-container{
+        width: 7rem;
+        height: 7rem;
+    }
+    .icon-container i{
+        font-size: 4rem;
+    }  
+}
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+    .nav-link{
+        font-size: 3.5rem;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+    .portfolio-item{
+        flex-direction: column;
+    }
+    .portfolio-img{
+        margin-top: 0 0 2rem 0;
+        order: 1;
+    }
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+    form{
+        width: 100%;
+    }
+
+    .up{
+        right: 2rem;
+    }
 }
