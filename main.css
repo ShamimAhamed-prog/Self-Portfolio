@@ -407,7 +407,7 @@ min-width: 12rem;
     flex-direction: column;
     border-radius: 90px;
     background: url(cn.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 .contact .content{
     max-width: 800px;
